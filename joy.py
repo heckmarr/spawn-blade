@@ -13,7 +13,6 @@ class CapGesture():
       if len(sys.argv) > 1:
           if sys.argv[1] == "--capture":
               self.mode = True
-    capFile = open('/home/entropy/Code/scuttlebutt/data/gestures/'+str(capFileName)+".ges", 'a')
     def writeOut(self):
         print("doot")
         #pygame.init()
