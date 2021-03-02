@@ -1,0 +1,5 @@
+menuentry "ROAR" {
+set root=(hd0,1)
+linux /vmlinuz root=/dev/mmcblk1 ro quiet splash
+initrd /initrd.img
+}
