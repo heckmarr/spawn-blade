@@ -2,5 +2,5 @@
 
 for A in $(ls)
 do
-	stat on $A;
+	stat $A;
 done
