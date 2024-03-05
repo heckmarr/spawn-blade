@@ -1,7 +1,6 @@
 #!/bin/bash
 rm .tmp_start_draw
-id="id=";
-xinput | grep "stylus" >> .tmp_start_draw
+xinput | grep "Pen Pen" >> .tmp_start_draw
 while read p; do
 	LAST=${p##*id=};
 	NUM=`echo $LAST | awk '{print $1}'`
