@@ -13,4 +13,13 @@ while read p; do
 done <.tmp_start_draw
 
 xinput map-to-output $NUM $DEV;
+LENGTH=`echo $NUM | awk '{print length}';`
+if [ "$LENGTH" == 0 ]
+then
+
+echo 'OUTPUT NOT MAPPED, DEVICE NOT PRESENT';
+
+else
+
 echo 'OUTPUT '$NUM' MAPPED TO '$DEV;
+fi
